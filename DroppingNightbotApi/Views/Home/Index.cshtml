@@ -1,31 +1,26 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    var rng = new Random();
+    var quotes = new List<string>(32)
+    {
+        "I Only Apply To The Sixth Amendment",
+        "Once You Go In You Always Come Out Alive",
+        "Dying Is MainStream #MONEY",
+        "Ill Never Forget The Blogs That Believed In Me Since The Begging.",
+        "People Tell Me To Smile I Tell Them The Lack Of Emotion In My Face Doesn't Mean I'm Unhappy",
+        "Luke. Who Has The Trident",
+        "Most Trees Are Blue",
+        "I Hope It Doesn't Take For Me To Die For You To See What I Do For You",
+        "How Can Mirrors Be Real If Our Eyes Aren't Real",
+        "I Watch Twilight Every Night",
+        "I Will Always Give You The Truth I Will Never Lie To You In My music If You Cant Handle My Feelings And Emotions Please Unfollow Me",
+        "If Everybody In The World Dropped Out Of School We Would Have A Much More Intelligent Society.",
+        "I Saw Owen Wilson One Time From A Distance And We Just Stared At Each Other, Then His Car Drove Off.",
+        "Either I Only Have One Pair Of Shoes Or Every Pair You Choose.",
+        "If Newborn Babies Could Speak They Would Be The Most Intelligent Beings On Planet Earth.",
+        "If A Cup Cake Falls From A Tree How Far Away Will It Be From Down. #Jupiter",
+        "You Can Discover Everything You Need To Know About Everything By Looking At Your Hands"
+
+    };
+    var quote = quotes.ElementAt(rng.Next(0, quotes.Count)).Replace("'", "");
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+@quote
